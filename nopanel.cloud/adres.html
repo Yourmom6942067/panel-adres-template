@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adres Sorgulama | NOPANEL</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Able Pro is trending dashboard template made using Bootstrap 5 design framework. Able Pro is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
+    <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
+    <meta name="author" content="BlonkX">
+
+    <meta property="og:title" content="NOPANEL">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <meta property="og:url" content="https://nopanel.cloud/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NOPANEL">
+    <meta property="og:locale" content="tr_TR">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/fonts/inter/inter.css" id="main-font-link" />
+
+    <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" />
+
+    <link rel="stylesheet" href="../assets/fonts/feather.css" />
+
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets/fonts/material.css" />
+    <link rel="stylesheet" href="../assets/fonts/keenicons.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="../assets/css/style-preset.css" />
+</head>
+<script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+    setTimeout(function() {
+        console.clear();
+        console.log('%cSelam ne yaptıgını biliyorsun bence :)', 'color: #ff0000; font-size: 20px; font-weight: bold; text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 0px #000, 4px 4px 0px #000, 5px 5px 0px #000;');
+        console.log('%cFT. BlonkX', 'color: #ff0000; font-size: 20px; font-weight: bold; text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 0px #000, 4px 4px 0px #000, 5px 5px 0px #000;');
+    }, 2000);
+</script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CN68DC42C" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+<script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9CN68DC42C');
+</script>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+
+    <nav class="pc-sidebar">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="/dashboard" class="b-brand text-primary">
+
+                    <div class="d-flex align-items-center items-center justify-content-center">
+                        <h2 class="text-white">NOPANEL</h2>
+                        <span class="badge bg-light-primary rounded-pill ms-1 ">v1.0</span>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-content">
+                <div class="card pc-user-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="../assets/images/user/avatar-8.jpg" class="img-fluid img-radius wid-50" alt="user">
+                            </div>
+                            <div class="flex-grow-1 ms-3 me-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <h5 class="text-white mb-0">
+                                        Panel67 </h5>
+                                </div>
+                                <small>Ücretsiz Üye</small>
+                                <div class="flex-shrink-1">
+                                    <small class="text-muted"><i class="fad fa-coins text-warning me-1" style="font-size: 10px;"></i>0 ₺ Bakiye</small>
+                                </div>
+                            </div>
+                            <a class="btn btn-icon btn-link-secondary avtar-s" data-bs-toggle="collapse" href="#pc_sidebar_userlink">
+<svg class="pc-icon">
+<use xlink:href="#custom-sort-outline"></use>
+</svg>
+</a>
+                        </div>
+                        <div class="collapse pc-user-links" id="pc_sidebar_userlink">
+                            <div class="pt-3">
+                                <a href="/profile">
+<i class="ti ti-user"></i>
+<span>Hesabım</span>
+</a>
+                                <a href="/profile">
+<i class="ti ti-settings"></i>
+<span>Ayarlar</span>
+</a>
+                                <a href="#!" onclick="if (!window.__cfRLUnblockHandlers) return false; logout()" data-cf-modified-2a7a69b3bb0732a4504cfe3a->
+<i class="ti ti-power"></i>
+<span>Çıkış Yap</span>
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pc-navbar">
+                    <li class="pc-item">
+                        <a href="/dashboard" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-home"></use>
+</svg>
+</span>
+<span class="pc-mtext">Ana Sayfa</span>
+</a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/profile" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-user"></use>
+</svg>
+</span>
+<span class="pc-mtext">Profilim</span>
+</a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/userstats" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-story"></use>
+</svg>
+</span>
+<span class="pc-mtext">Kullanıcı Sıralaması</span>
+</a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/refstats" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-fatrows"></use>
+</svg>
+</span>
+<span class="pc-mtext">Referans Sıralaması</span>
+</a>
+                    </li>
+                    <li class="pc-item pc-caption">
+                        <label>Market</label>
+                        <i class="ti ti-chart-arcs"></i>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/shop" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-bag"></use>
+</svg>
+</span>
+<span class="pc-mtext">Market</span>
+</a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/addbalance" class="pc-link">
+<span class="pc-micon">
+<i class="fad fa-wallet"></i>
+</span>
+<span class="pc-mtext">Bakiye Yükle <span class="badge bg-light-primary rounded-pill ms-1">Bonus Aktif</span></span>
+</a>
+                    </li>
+
+                    <li class="pc-item pc-caption">
+                        <label>Sorgu Cözümleri</label>
+                        <i class="ti ti-dashboard"></i>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-user"></use>
+</svg> </span
+            ><span class="pc-mtext">Mernis 2024</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/adsoyad">Ad Soyad Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/adsoyadv2">Ad Soyad Pro <span class="badge bg-light-primary rounded-pill ms-1">V2</span></a></li>
+                            <li class="pc-item"><a class="pc-link" href="/tc">TC Kimlik Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/tcpro">TC Pro Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/vergi">Vergi Dairesi Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/medeni">Medeni Hal Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-user-add"></use>
+</svg> </span
+         ><span class="pc-mtext">Aile Cözümleri</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/guncelaile">Güncel Aile Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/aile">Aile Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/sulale">Sülale Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/annetarafi">Anne Tarafı Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/babatarafi">Baba Tarafı Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/evlilik">Eş Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-call-calling"></use>
+</svg>
+</span
+            ><span class="pc-mtext">GSM Cözümleri</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/gsmtc">GSM TC Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/tcgsm">TC GSM Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link items-center" href="/gsm">GSM Sorgulama <span class="badge bg-light-primary rounded-pill ms-1">V2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-flag"></use>
+</svg> </span>
+<span class="pc-mtext">Adres Cözümleri</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/adres">Adres Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/bina">Bina Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/koy">Köy Mahalle Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<i class="fad fa-id-card" style=" opacity: 0.7;"></i></span
+              
+            ><span class="pc-mtext">NVİ Cözümleri</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/kargo">Kargo Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/randevu">Randevu Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<i class="fad fa-search" style=" opacity: 0.7;"></i></span
+              
+            ><span class="pc-mtext">Diğer Cözümler</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/iban">IBAN Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+<i class="fad fa-crown text-warning" style=" opacity: 0.7;"></i> </span
+              
+            ><span class="pc-mtext">Premium Cözümler</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+          ></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="/parsel">Parsel Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/tapu">Tapu Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/plaka">Plaka Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/plakapro">Plaka Pro Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/tcprov2">TC PRO V2 Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/meslek">Meslek Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/evesika">E Okul Vesika</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/adresv2">2024 Adres Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/rehber">Rehber Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/ilac">İlaç Sorgulama</a></li>
+                            <li class="pc-item"><a class="pc-link" href="/rapor">Rapor Sorgulama</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-caption">
+                        <label>Destek Sistemi</label>
+                        <i class="ti ti-dashboard"></i>
+                    </li>
+                    <li class="pc-item">
+                        <a href="/tickets" class="pc-link">
+<span class="pc-micon">
+<svg class="pc-icon">
+<use xlink:href="#custom-24-support"></use>
+</svg>
+</span>
+<span class="pc-mtext">Destek Sistemi</span>
+</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+        function logout() {
+            $.ajax({
+                url: '/authorization',
+                type: 'POST',
+                data: {
+                    action: "logout"
+                },
+                dataType: 'json',
+                success: function(data) {
+                    if (data.success) {
+                        window.location.href = "/login";
+                    } else {
+                        alert(data.message);
+                    }
+                }
+            });
+        }
+    </script>
+    <header class="pc-header">
+        <div class="header-wrapper">
+            <div class="me-auto pc-mob-drp">
+                <ul class="list-unstyled">
+
+                    <li class="pc-h-item pc-sidebar-collapse">
+                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+<i class="ti ti-menu-2"></i>
+</a>
+                    </li>
+                    <li class="pc-h-item pc-sidebar-popup">
+                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+<i class="ti ti-menu-2"></i>
+</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="ms-auto">
+            <ul class="list-unstyled">
+                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+<svg class="pc-icon">
+<use xlink:href="#custom-notification"></use>
+</svg>
+<span class="badge bg-success pc-h-badge">1</span>
+</a>
+                    <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
+                        <div class="dropdown-header d-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Bildirimler</h5>
+                            <a href="#!" class="btn btn-link btn-sm" onclick="if (!window.__cfRLUnblockHandlers) return false; readAllNotifications()" data-cf-modified-2a7a69b3bb0732a4504cfe3a->Hepsini Oku</a>
+                        </div>
+                        <div class="dropdown-body text-wrap header-notification-scroll position-relative" style="max-height: calc(100vh - 215px)">
+                            <p class="text-span">Bugün</p>
+                            <div class="notification-group">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <svg class="pc-icon text-primary">
+<use xlink:href="#custom-user-add"></use>
+</svg>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <span class="float-end text-sm text-muted">8 dakika önce</span>
+                                                <h5 class="text-body mb-2">Register</h5>
+                                                <p class="mb-0">Merhaba, Panel67 hoşgeldin. Kayıt oldun. Kayıt olduğun tarih: 2024-08-21 23:20:42</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-footer d-grid">
+                            <a href="/notifications" class="btn btn-primary">Tüm Bildirimler</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+<svg class="pc-icon">
+<use xlink:href="#custom-sun-1"></use>
+</svg>
+</a>
+                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+                        <a href="#!" class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; layout_change('dark')" data-cf-modified-2a7a69b3bb0732a4504cfe3a->
+<svg class="pc-icon">
+<use xlink:href="#custom-moon"></use>
+</svg>
+<span>Dark</span>
+</a>
+                        <a href="#!" class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; layout_change('light')" data-cf-modified-2a7a69b3bb0732a4504cfe3a->
+<svg class="pc-icon">
+<use xlink:href="#custom-sun-1"></use>
+</svg>
+<span>Light</span>
+</a>
+                        <a href="#!" class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; layout_change_default()" data-cf-modified-2a7a69b3bb0732a4504cfe3a->
+<svg class="pc-icon">
+<use xlink:href="#custom-setting-2"></use>
+</svg>
+<span>Default</span>
+</a>
+                    </div>
+                </li>
+                <li class="dropdown pc-h-item header-user-profile">
+                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+<img src="../assets/images/user/avatar-8.jpg" class="img-fluid img-radius wid-40" alt="user">
+</a>
+                    <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                        <div class="dropdown-header d-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Profile</h5>
+                        </div>
+                        <div class="dropdown-body">
+                            <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 225px)">
+                                <div class="d-flex mb-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="../assets/images/user/avatar-8.jpg" class="img-fluid img-radius wid-40" alt="user">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-1">Panel67</h6>
+                                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="760f1903041b191b404f4244464041404136111b171f1a5815191b">[email&#160;protected]</a></span>
+                                    </div>
+                                </div>
+                                <hr class="border-secondary border-opacity-50" />
+                                <p class="text-span">Manage</p>
+                                <a href="/profile" class="dropdown-item">
+<span>
+<svg class="pc-icon text-muted me-2">
+<use xlink:href="#custom-setting-outline"></use>
+</svg>
+<span>Ayarlar</span>
+</span>
+</a>
+                                <a href="/profile" class="dropdown-item">
+<span>
+<svg class="pc-icon text-muted me-2">
+<use xlink:href="#custom-share-bold"></use>
+</svg>
+<span>Referanslarım</span>
+</span>
+</a>
+                                <hr class="border-secondary border-opacity-50" />
+                                <div class="d-grid mb-0">
+                                    <button class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; logout()" data-cf-modified-2a7a69b3bb0732a4504cfe3a->
+<svg class="pc-icon me-2">
+<use xlink:href="#custom-logout-1-outline"></use></svg>
+Cikis Yap
+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <div class="col-xl-4 col-md-6">
+        <div id="reklammodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="reklammodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reklammodal"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="if (!window.__cfRLUnblockHandlers) return false; closemodal()" data-cf-modified-2a7a69b3bb0732a4504cfe3a-></button>
+                    </div>
+                    <div class="modal-body w-100">
+                        <span> </span>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; opennewtab('')" data-cf-modified-2a7a69b3bb0732a4504cfe3a-></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Lax;Secure";
+        }
+
+        //     var closeClicked = false;
+
+        // function handleClose() {
+        //     if (!closeClicked) {
+        //         closeClicked = true;
+        //         $('#reklammodal').modal('hide');
+        //         setTimeout(function() {
+        //             setCookie('modal_closed', 'true', 15);
+        //             if (isDesktop()) {
+        //                 var newWindow = window.open("https://ui.colidy.com/", "_blank", "width=1,height=1,left=10000,top=10000");
+        //                 if (newWindow) {
+        //                     newWindow.blur();
+        //                     window.focus();
+        //                 }
+        //             } else {
+        //                 window.open("https://ui.colidy.com/", "_blank");
+        //             }
+        //         }, 500);
+        //         return false;
+        //     } else {
+        //         $('#reklammodal').modal('hide');
+        //         setCookie('modal_closed', 'true', 15);
+        //     }
+        // }
+
+        // function isDesktop() {
+        //     var userAgent = navigator.userAgent;
+        //     return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+        // }
+
+
+
+
+        //     function opennewtab(url) {
+        //     window.open(url, '_blank');
+        //     $('#reklammodal').modal('hide');
+        //     setCookie('modal_closed', 'true', 10); // Modal kapandığında çerez ayarlanır
+        //   }
+
+
+        function closemodal() {
+            $('#reklammodal').modal('hide');
+            setCookie('modal_closed', 'true', 10);
+        }
+
+        function opennewtab(url) {
+            $('#reklammodal').modal('hide');
+            setCookie('modal_closed', 'true', 10);
+            window.open(url, '_blank');
+        }
+
+        $(document).ready(function() {
+            if ('false' !== 'false') {
+                $('#reklammodal').modal('show');
+            }
+        });
+
+        function readNotification(id) {
+            $.ajax({
+                url: '/authorization',
+                type: 'POST',
+                data: {
+                    id: id,
+                    action: 'readNotification'
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+        function readAllNotifications() {
+            $.ajax({
+                url: '/authorization',
+                type: 'POST',
+                data: {
+                    action: 'readAllNotifications'
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+        function deleteNotification(id) {
+            $.ajax({
+                url: '/authorization',
+                type: 'POST',
+                data: {
+                    id: id,
+                    action: 'deleteNotification'
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+        function deleteAllNotifications() {
+            $.ajax({
+                url: '/authorization',
+                type: 'POST',
+                data: {
+                    action: 'deleteAllNotifications'
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+
+        function translatePage(lang) {
+            var translateElement = new google.translate.TranslateElement({
+                pageLanguage: 'tr',
+                includedLanguages: 'en,fr,de,es,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+
+            var event = document.createEvent('HTMLEvents');
+            event.initEvent('change', true, true);
+            var select = document.querySelector('select.goog-te-combo');
+            select.value = lang;
+            select.dispatchEvent(event);
+        }
+    </script>
+
+    <div id="openalert" style="display: none;">
+        <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div class="toast show fade">
+                    <div class="toast-header">
+                        <strong class="me-auto">NOPANEL</strong>
+                        <small>21.08.2024 23:29:08</small>
+                    </div>
+                    <div class="toast-body" id="toastMessage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pc-container">
+        <div class="pc-content">
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Adres Sorgulama</h5>
+                            <span class="d-block m-t-5">Tc Kimlik Numarası ile adres sorgulama yapabilirsiniz.</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Tc Kimlik Numarası</label>
+                                        <input type="text" class="form-control" id="tc" placeholder="Tc Kimlik Numarası Giriniz" maxlength="11">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button type="button" id="buton" class="btn btn-light-primary me-2" onclick="if (!window.__cfRLUnblockHandlers) return false; searchUser()" data-cf-modified-2a7a69b3bb0732a4504cfe3a-><i class="feather icon-search"></i> Sorgula</button>
+                                <button type="button" class="btn btn-light-danger" onclick="if (!window.__cfRLUnblockHandlers) return false; location.reload()" data-cf-modified-2a7a69b3bb0732a4504cfe3a-><i class="feather icon-x"></i> Temizle</button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="feather icon-download"></i> İndir
+</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-format="pdf">PDF İndir</a></li>
+                                        <li><a class="dropdown-item" href="#" data-format="excel">Excel İndir</a></li>
+                                        <li><a class="dropdown-item" href="#" data-format="word">Word İndir</a></li>
+                                        <li><a class="dropdown-item" href="#" data-format="txt">TXT İndir</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Sonuçlar</h5>
+                        <span class="d-block m-t-5">Tabloda toplam <code id="count">0</code> sonuç bulunmaktadır.</span>
+                    </div>
+                    <div class="card-body table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>TC</th>
+                                        <th>Ad Soyad</th>
+                                        <th>Doğum Yeri</th>
+                                        <th>Acık Adres</th>
+                                        <th>İşlem</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Harita Görseli</h5>
+                    </div>
+                    <div class="card-body" id="mapDiv">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="pc-footer">
+        <div class="footer-wrapper container-fluid">
+            <div class="row">
+                <div class="col my-1">
+                    <p class="m-0">NOPANEL <i class="fas fa-heart text-danger"></i> by <a href="https://ui.colidy.com" target="_blank">Root</a></p>
+                </div>
+                <div class="col-auto my-1">
+                    <ul class="list-inline footer-link mb-0">
+                        <li class="list-inline-item"><a href="/dashboard">Ana Sayfa</a></li>
+                        <li class="list-inline-item"><a href="https://discord.gg/JXgA8kS3Jt" target="_blank">Discord</a></li>
+                        <li class="list-inline-item"><a href="https://t.me/sorgulinkx" target="_blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/plugins/simple-datatables.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+        const dataTable = new simpleDatatables.DataTable('#pc-dt-simple');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            function getCurrentDateTime() {
+                var now = new Date();
+                return now.getFullYear() + "_" + (now.getMonth() + 1) + "_" + now.getDate() + "_" + now.getHours() + "_" + now.getMinutes() + "_" + now.getSeconds();
+            }
+
+            function downloadAllTables(format) {
+                var tables = document.querySelectorAll("table");
+                switch (format) {
+                    case 'pdf':
+                        downloadAllTablesPDF(tables);
+                        break;
+                    case 'excel':
+                        downloadAllTablesExcel(tables);
+                        break;
+                    case 'word':
+                        downloadAllTablesWord(tables);
+                        break;
+                    case 'txt':
+                        downloadAllTablesTXT(tables);
+                        break;
+                }
+            }
+
+            function downloadAllTablesPDF(tables) {
+                const {
+                    jsPDF
+                } = window.jspdf;
+                var doc = new jsPDF();
+                var col = 20;
+                var row = 20;
+
+                tables.forEach(function(table, index) {
+                    var headers = [];
+                    var rows = table.getElementsByTagName("tr");
+
+                    // Get headers
+                    table.querySelectorAll("thead tr th").forEach(function(th) {
+                        headers.push(th.innerText);
+                    });
+
+                    // Add headers
+                    headers.forEach(function(header) {
+                        doc.text(header, col, row);
+                        col += 30;
+                    });
+
+                    col = 20;
+                    row += 10;
+
+                    // Add data
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].getElementsByTagName("td");
+                        for (var j = 0; j < cells.length; j++) {
+                            doc.text(cells[j].innerText, col, row);
+                            col += 30;
+                        }
+                        col = 20;
+                        row += 10;
+                    }
+
+                    row += 10; // Add some space between tables
+                });
+
+                var filename = 'all_tables_' + getCurrentDateTime() + '.pdf';
+                doc.save(filename);
+            }
+
+            function downloadAllTablesExcel(tables) {
+                var wb = XLSX.utils.book_new();
+
+                tables.forEach(function(table, index) {
+                    var ws = XLSX.utils.table_to_sheet(table);
+                    XLSX.utils.book_append_sheet(wb, ws, 'Table ' + (index + 1));
+                });
+
+                var filename = 'all_tables_' + getCurrentDateTime() + '.xlsx';
+                XLSX.writeFile(wb, filename);
+            }
+
+            function downloadAllTablesWord(tables) {
+                var text = '';
+
+                tables.forEach(function(table, index) {
+                    var headers = [];
+                    var rows = table.getElementsByTagName("tr");
+
+                    // Get headers
+                    table.querySelectorAll("thead tr th").forEach(function(th) {
+                        headers.push(th.innerText);
+                    });
+
+                    // Add headers
+                    text += headers.join("\t") + '\n';
+
+                    // Add data
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].getElementsByTagName("td");
+                        for (var j = 0; j < cells.length; j++) {
+                            text += cells[j].innerText + '\t';
+                        }
+                        text += '\n';
+                    }
+
+                    text += '\n'; // Add some space between tables
+                });
+
+                var blob = new Blob([text], {
+                    type: "application/msword"
+                });
+
+                var filename = 'all_tables_' + getCurrentDateTime() + '.doc';
+                saveAs(blob, filename);
+            }
+
+            function downloadAllTablesTXT(tables) {
+                var text = '';
+
+                tables.forEach(function(table, index) {
+                    var headers = [];
+                    var rows = table.getElementsByTagName("tr");
+
+                    // Get headers
+                    table.querySelectorAll("thead tr th").forEach(function(th) {
+                        headers.push(th.innerText);
+                    });
+
+                    // Add headers
+                    text += headers.join("\t") + '\n';
+
+                    // Add data
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].getElementsByTagName("td");
+                        for (var j = 0; j < cells.length; j++) {
+                            text += cells[j].innerText + '\t';
+                        }
+                        text += '\n';
+                    }
+
+                    text += '\n'; // Add some space between tables
+                });
+
+                var blob = new Blob([text], {
+                    type: "text/plain;charset=utf-8"
+                });
+
+                var filename = 'all_tables_' + getCurrentDateTime() + '.txt';
+                saveAs(blob, filename);
+            }
+
+            // Bind dropdown items to the download function
+            document.querySelectorAll('.dropdown-item').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var format = this.getAttribute('data-format');
+                    downloadAllTables(format);
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/plugins/apexcharts.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/pages/dashboard-default.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+
+
+    <script src="../assets/js/plugins/popper.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/plugins/simplebar.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/fonts/custom-font.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/config.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/pcoded.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script src="../assets/js/plugins/feather.min.js" type="2a7a69b3bb0732a4504cfe3a-text/javascript"></script>
+    <script type="2a7a69b3bb0732a4504cfe3a-text/javascript">
+        function searchUser() {
+            var tc = document.getElementById('tc').value;
+            document.getElementById("buton").disabled = true;
+
+            var data = {
+                action: 'adres',
+                tc: tc
+            };
+            document.getElementById("tableBody").innerHTML = '';
+            document.getElementById("count").innerText = '0';
+            document.getElementById("toastMessage").innerHTML = 'Sorgu yapılıyor, lütfen bekleyiniz...';
+            document.getElementById("openalert").style.display = "block";
+
+
+            $.ajax({
+                url: '../api/adres.php',
+                type: 'POST',
+                data: data,
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        var tableBody = document.getElementById('tableBody');
+                        var count = document.getElementById('count');
+                        tableBody.innerHTML = '';
+                        count.innerText = 1;
+
+                        var tr = document.createElement('tr');
+                        tr.innerHTML = '<td data-label="TC">' + response.data.TCKN + '</td>' +
+                            '<td data-label="Ad Soyad">' + response.data.AdSoyad + '</td>' +
+                            '<td data-label="Doğum Yeri">' + response.data.DogumYeri + '</td>' +
+                            '<td data-label="Acık Adres">' + response.data.ikametgah + '</td>' +
+                            '<td data-label="İşlem"><button class="btn btn-light-primary" onclick="copyRowData(this)"><i class="feather icon-copy"></i> Kopyala</button></td>';
+                        tableBody.appendChild(tr);
+                        //eger resim gelirse image ekle
+                        if (response.data.image) {
+                            var img = document.createElement('img');
+                            img.src = 'data:image/png;base64,' + response.data.image;
+                            img.style.width = '100%';
+                            img.style.height = 'auto';
+                            document.getElementById('mapDiv').innerHTML = '';
+                            document.getElementById('mapDiv').appendChild(img);
+                        } else {
+                            document.getElementById('mapDiv').innerHTML = '';
+                        }
+
+                        document.getElementById("buton").disabled = false;
+
+                        document.getElementById("toastMessage").innerHTML = response.message;
+                        document.getElementById("openalert").style.display = "block";
+                        setTimeout(function() {
+                            document.getElementById("openalert").style.display = "none";
+                        }, 3000);
+                    } else {
+                        document.getElementById("buton").disabled = false;
+
+                        document.getElementById("toastMessage").innerHTML = response.message;
+                        document.getElementById("openalert").style.display = "block";
+                        setTimeout(function() {
+                            document.getElementById("openalert").style.display = "none";
+                        }, 3000);
+                    }
+                },
+                error: function(response) {
+                    if (xhr.responseText.includes('Just a moment...') || xhr.responseText.includes('Cloudflare')) {
+                        console.log('Cloudflare protection detected, reloading the page...');
+                        document.getElementById("toastMessage").innerHTML = 'Cloudflare koruması algılandı, sayfa yeniden yükleniyor...';
+                        document.getElementById("openalert").style.display = "block";
+                        document.getElementById("buton").disabled = false;
+                        setTimeout(function() {
+                            location.reload();
+                        }, 3000); // 3 seconds delay before reloading
+                    }
+                }
+            });
+        }
+
+        function copyRowData(button) {
+            var row = button.closest('tr');
+            var rowData = [];
+
+            row.querySelectorAll('td').forEach(function(cell) {
+                var label = cell.dataset.label;
+                var value = cell.innerText.trim();
+                if (value !== "") {
+                    rowData.push(label + ': ' + value);
+                }
+            });
+
+            var textToCopy = rowData.join("\n");
+
+            var textarea = document.createElement("textarea");
+            textarea.value = textToCopy;
+
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            document.getElementById("toastMessage").innerHTML = 'Veriler başarıyla kopyalandı.';
+            document.getElementById("openalert").style.display = "block";
+            setTimeout(function() {
+                document.getElementById("openalert").style.display = "none";
+            }, 2000);
+
+        }
+    </script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2a7a69b3bb0732a4504cfe3a-|49" defer></script>
+    <script>
+        (function() {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'8b6e674bde21add1',t:'MTcyNDI4Mjk0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8b6e674bde21add1","version":"2024.8.0","r":1,"token":"1b1da799cb7f4b92b22a4bf4d39de332","serverTiming":{"name":{"cfL4":true}}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
